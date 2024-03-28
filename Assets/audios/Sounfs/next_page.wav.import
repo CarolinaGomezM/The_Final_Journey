@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/next_page.wav-5c4e77ddf3d2987d08c86f18d818127f.sample"
+
+[deps]
+
+source_file="res://Assets/audios/Sounfs/next_page.wav"
+dest_files=[ "res://.import/next_page.wav-5c4e77ddf3d2987d08c86f18d818127f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

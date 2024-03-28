@@ -1,0 +1,397 @@
+[gd_scene load_steps=32 format=2]
+
+[ext_resource path="res://Assets/Estructuras/edificio3.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Suelo/TileMap.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Calle recursos.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Gato.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/Estructuras/5.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Estructuras/Ideas2 - copia/3.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Estructuras/Ideas2 - copia/4.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Estructuras/Ideas2 - copia/5.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Estructuras/Ideas2 - copia/7.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Estructuras/Ideas2 - copia/6.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Estructuras/Ideas2 - copia/8.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Estructuras/Ideas2 - copia/9.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Estructuras/Ideas2 - copia/18.png" type="Texture" id=13]
+[ext_resource path="res://npc_panadero.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Assets/Estructuras/Ideas2 - copia/17.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Estructuras/Ideas2 - copia/14.png" type="Texture" id=16]
+[ext_resource path="res://Mundo.gd" type="Script" id=17]
+[ext_resource path="res://Assets/Estructuras/Ideas2 - copia/19.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Estructuras/Ideas2 - copia/20.png" type="Texture" id=19]
+[ext_resource path="res://big_trash.tscn" type="PackedScene" id=20]
+[ext_resource path="res://mujer.tscn" type="PackedScene" id=21]
+[ext_resource path="res://GUI.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Assets/Music/Piano Instrumental 4.wav" type="AudioStream" id=23]
+[ext_resource path="res://Assets/Music/New-York-City-Ambience-Sound-Effect.wav" type="AudioStream" id=24]
+[ext_resource path="res://Assets/Music/2- Mental Vortex.ogg" type="AudioStream" id=25]
+[ext_resource path="res://viejo.tscn" type="PackedScene" id=26]
+[ext_resource path="res://sombrero.tscn" type="PackedScene" id=27]
+[ext_resource path="res://small_trash.tscn" type="PackedScene" id=28]
+[ext_resource path="res://middle_trash.tscn" type="PackedScene" id=29]
+[ext_resource path="res://Assets/Finals/_23cc68d7-0c7d-41ed-95d8-031def85ab97.jpeg" type="Texture" id=30]
+[ext_resource path="res://Camera2DPausa.gd" type="Script" id=32]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 17 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -68.0
+margin_top = -465.0
+margin_right = 6222.0
+margin_bottom = 361.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="AnimatedSprite" parent="." instance=ExtResource( 3 )]
+position = Vector2( 73.5, 97 )
+scale = Vector2( 0.158777, 0.184558 )
+
+[node name="Edificio3" type="Sprite" parent="."]
+position = Vector2( 474, 96 )
+scale = Vector2( 0.254527, 0.241546 )
+texture = ExtResource( 1 )
+
+[node name="5" type="Sprite" parent="."]
+position = Vector2( 255, 97.5 )
+scale = Vector2( 0.220699, 0.182916 )
+texture = ExtResource( 5 )
+
+[node name="3" type="Sprite" parent="."]
+position = Vector2( 1226, 98 )
+scale = Vector2( 0.425781, 0.382813 )
+
+[node name="4" type="Sprite" parent="."]
+position = Vector2( 644, 83 )
+scale = Vector2( 0.179883, 0.135696 )
+texture = ExtResource( 6 )
+
+[node name="6" type="Sprite" parent="."]
+position = Vector2( -122, 541 )
+scale = Vector2( 0.220807, 0.19421 )
+texture = ExtResource( 7 )
+offset = Vector2( 3940.09, -2605.43 )
+
+[node name="7" type="Sprite" parent="."]
+position = Vector2( 831, 99.25 )
+scale = Vector2( 0.217544, 0.230094 )
+texture = ExtResource( 8 )
+
+[node name="8" type="Sprite" parent="."]
+position = Vector2( 942, 7.5 )
+scale = Vector2( 0.236496, 0.27658 )
+texture = ExtResource( 10 )
+
+[node name="9" type="Sprite" parent="."]
+position = Vector2( 1121.2, 99.5 )
+scale = Vector2( 0.303445, 0.304281 )
+texture = ExtResource( 9 )
+
+[node name="10" type="Sprite" parent="."]
+position = Vector2( 1311, 98 )
+scale = Vector2( 0.295305, 0.295305 )
+texture = ExtResource( 11 )
+
+[node name="11" type="Sprite" parent="."]
+position = Vector2( 1508, 99.5 )
+scale = Vector2( 0.148559, 0.163786 )
+texture = ExtResource( 12 )
+
+[node name="19" type="Sprite" parent="."]
+position = Vector2( 2574, -43.3516 )
+scale = Vector2( 0.282097, 0.433753 )
+texture = ExtResource( 13 )
+
+[node name="18" type="Sprite" parent="."]
+position = Vector2( 2134, 45.8125 )
+scale = Vector2( 0.250595, 0.270945 )
+texture = ExtResource( 15 )
+
+[node name="15" type="Sprite" parent="."]
+position = Vector2( 1766, 42 )
+scale = Vector2( 0.174746, 0.202254 )
+texture = ExtResource( 16 )
+
+[node name="21" type="Sprite" parent="."]
+position = Vector2( 3558.87, 65.125 )
+scale = Vector2( 0.185376, 0.197458 )
+texture = ExtResource( 19 )
+
+[node name="20" type="Sprite" parent="."]
+position = Vector2( 3118.09, 9.49996 )
+scale = Vector2( 0.271203, 0.32548 )
+texture = ExtResource( 18 )
+
+[node name="12" type="Sprite" parent="."]
+position = Vector2( 3823.69, 94.9794 )
+scale = Vector2( 0.300865, 0.301267 )
+texture = ExtResource( 11 )
+
+[node name="13" type="Sprite" parent="."]
+position = Vector2( 5587, 95 )
+scale = Vector2( 0.316639, 0.311162 )
+texture = ExtResource( 9 )
+
+[node name="16" type="Sprite" parent="."]
+position = Vector2( 5334, 43 )
+scale = Vector2( 0.174746, 0.202254 )
+texture = ExtResource( 16 )
+
+[node name="Edificio4" type="Sprite" parent="."]
+position = Vector2( 4181, 96 )
+scale = Vector2( 0.254527, 0.241546 )
+texture = ExtResource( 1 )
+
+[node name="14" type="Sprite" parent="."]
+position = Vector2( 5903, 34 )
+scale = Vector2( 0.220807, 0.19421 )
+texture = ExtResource( 7 )
+
+[node name="17" type="Sprite" parent="."]
+position = Vector2( 1508, 99.5 )
+scale = Vector2( 0.148559, 0.163786 )
+texture = ExtResource( 12 )
+
+[node name="22" type="Sprite" parent="."]
+position = Vector2( 4564, 9 )
+scale = Vector2( 0.271203, 0.32548 )
+texture = ExtResource( 18 )
+
+[node name="23" type="Sprite" parent="."]
+position = Vector2( 5006, 66 )
+scale = Vector2( 0.185376, 0.197458 )
+texture = ExtResource( 19 )
+
+[node name="24" type="Sprite" parent="."]
+position = Vector2( 3992, 5 )
+scale = Vector2( 0.236496, 0.27658 )
+texture = ExtResource( 10 )
+
+[node name="25" type="Sprite" parent="."]
+position = Vector2( 5769, 5 )
+scale = Vector2( 0.236496, 0.27658 )
+texture = ExtResource( 10 )
+
+[node name="TileMap" parent="." instance=ExtResource( 2 )]
+tile_data = PoolIntArray( 65535, 0, 0, 93, 0, 0, 94, 0, 0, 131071, 0, 0, 65629, 0, 0, 65630, 0, 0, 196607, 0, 0, 131165, 0, 0, 131166, 0, 0, 262143, 0, 0, 196701, 0, 0, 196702, 0, 0, 327679, 0, 0, 262237, 0, 0, 262238, 0, 0, 393215, 0, 0, 327773, 0, 0, 327774, 0, 0, 458751, 0, 0, 393309, 0, 0, 393310, 0, 0, 524287, 0, 0, 458845, 0, 0, 458846, 0, 0, 589823, 0, 0, 524381, 0, 0, 524382, 0, 0, 655359, 0, 0, 589917, 0, 0, 589918, 0, 0, 720895, 0, 0, 655453, 0, 0, 655454, 0, 0, 786431, 0, 0, 720989, 0, 0, 720990, 0, 0, 851967, 0, 0, 786525, 0, 0, 786526, 0, 0, 917503, 0, 0, 851968, 0, 0, 851969, 0, 0, 851970, 0, 0, 851971, 0, 0, 851972, 0, 0, 851973, 0, 0, 851974, 0, 0, 851975, 0, 0, 851976, 0, 0, 851977, 0, 0, 851978, 0, 0, 851979, 0, 0, 851980, 0, 0, 851981, 0, 0, 851982, 0, 0, 851983, 0, 0, 851984, 0, 0, 851985, 0, 0, 851986, 0, 0, 851987, 0, 0, 851988, 0, 0, 851989, 0, 0, 851990, 0, 0, 851991, 0, 0, 851992, 0, 0, 851993, 0, 0, 851994, 0, 0, 851995, 0, 0, 851996, 0, 0, 851997, 0, 0, 851998, 0, 0, 851999, 0, 0, 852000, 0, 0, 852001, 0, 0, 852002, 0, 0, 852003, 0, 0, 852004, 0, 0, 852005, 0, 0, 852006, 0, 0, 852007, 0, 0, 852008, 0, 0, 852009, 0, 0, 852010, 0, 0, 852011, 0, 0, 852012, 0, 0, 852013, 0, 0, 852014, 0, 0, 852015, 0, 0, 852016, 0, 0, 852017, 0, 0, 852018, 0, 0, 852019, 0, 0, 852020, 0, 0, 852021, 0, 0, 852022, 0, 0, 852023, 0, 0, 852024, 0, 0, 852025, 0, 0, 852026, 0, 0, 852027, 0, 0, 852028, 0, 0, 852029, 0, 0, 852030, 0, 0, 852031, 0, 0, 852032, 0, 0, 852033, 0, 0, 852034, 0, 0, 852035, 0, 0, 852036, 0, 0, 852037, 0, 0, 852038, 0, 0, 852039, 0, 0, 852040, 0, 0, 852041, 0, 0, 852042, 0, 0, 852043, 0, 0, 852044, 0, 0, 852045, 0, 0, 852046, 0, 0, 852047, 0, 0, 852048, 0, 0, 852049, 0, 0, 852050, 0, 0, 852051, 0, 0, 852052, 0, 0, 852053, 0, 0, 852054, 0, 0, 852055, 0, 0, 852056, 0, 0, 852057, 0, 0, 852058, 0, 0, 852059, 0, 0, 852060, 0, 0, 852061, 0, 0, 852062, 0, 0, 983039, 0, 0, 917504, 0, 0, 917505, 0, 0, 917506, 0, 0, 917507, 0, 0, 917508, 0, 0, 917509, 0, 0, 917510, 0, 0, 917511, 0, 0, 917512, 0, 0, 917513, 0, 0, 917514, 0, 0, 917515, 0, 0, 917516, 0, 0, 917517, 0, 0, 917518, 0, 0, 917519, 0, 0, 917520, 0, 0, 917521, 0, 0, 917522, 0, 0, 917523, 0, 0, 917524, 0, 0, 917525, 0, 0, 917526, 0, 0, 917527, 0, 0, 917528, 0, 0, 917529, 0, 0, 917530, 0, 0, 917531, 0, 0, 917532, 0, 0, 917533, 0, 0, 917534, 0, 0, 917535, 0, 0, 917536, 0, 0, 917537, 0, 0, 917538, 0, 0, 917539, 0, 0, 917540, 0, 0, 917541, 0, 0, 917542, 0, 0, 917543, 0, 0, 917544, 0, 0, 917545, 0, 0, 917546, 0, 0, 917547, 0, 0, 917548, 0, 0, 917549, 0, 0, 917550, 0, 0, 917551, 0, 0, 917552, 0, 0, 917553, 0, 0, 917554, 0, 0, 917555, 0, 0, 917556, 0, 0, 917557, 0, 0, 917558, 0, 0, 917559, 0, 0, 917560, 0, 0, 917561, 0, 0, 917562, 0, 0, 917563, 0, 0, 917564, 0, 0, 917565, 0, 0, 917566, 0, 0, 917567, 0, 0, 917568, 0, 0, 917569, 0, 0, 917570, 0, 0, 917571, 0, 0, 917572, 0, 0, 917573, 0, 0, 917574, 0, 0, 917575, 0, 0, 917576, 0, 0, 917577, 0, 0, 917578, 0, 0, 917579, 0, 0, 917580, 0, 0, 917581, 0, 0, 917582, 0, 0, 917583, 0, 0, 917584, 0, 0, 917585, 0, 0, 917586, 0, 0, 917587, 0, 0, 917588, 0, 0, 917589, 0, 0, 917590, 0, 0, 917591, 0, 0, 917592, 0, 0, 917593, 0, 0, 917594, 0, 0, 917595, 0, 0, 917596, 0, 0, 917597, 0, 0, 917598, 0, 0, 983043, 0, 0, 983044, 0, 0 )
+
+[node name="Settings" type="Node2D" parent="."]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="Settings"]
+color = Color( 0.678431, 0.505882, 0.505882, 1 )
+
+[node name="CanvasModulate2" type="CanvasModulate" parent="Settings"]
+visible = false
+color = Color( 0.419608, 0.152941, 0.152941, 1 )
+
+[node name="Trash" parent="." instance=ExtResource( 20 )]
+position = Vector2( 577, 163 )
+
+[node name="Trash3" parent="." instance=ExtResource( 20 )]
+position = Vector2( 2894, 164 )
+
+[node name="Trash4" parent="." instance=ExtResource( 20 )]
+position = Vector2( 4111, 163 )
+
+[node name="Small_trash" parent="." instance=ExtResource( 28 )]
+position = Vector2( 2067, 179 )
+
+[node name="Small_trash3" parent="." instance=ExtResource( 28 )]
+position = Vector2( 1217, 179 )
+
+[node name="Small_trash4" parent="." instance=ExtResource( 28 )]
+position = Vector2( 5685, 176 )
+
+[node name="middle_Trash" parent="." instance=ExtResource( 29 )]
+position = Vector2( 4674, 150 )
+
+[node name="middle_Trash2" parent="." instance=ExtResource( 29 )]
+position = Vector2( -1, 149 )
+
+[node name="middle_Trash3" parent="." instance=ExtResource( 29 )]
+position = Vector2( 3370, 149 )
+
+[node name="middle_Trash4" parent="." instance=ExtResource( 29 )]
+position = Vector2( 2684, 149 )
+
+[node name="Panadero" parent="." groups=["NPCs"] instance=ExtResource( 14 )]
+position = Vector2( 204, 172 )
+
+[node name="Panadero2" parent="." groups=["NPCs"] instance=ExtResource( 14 )]
+position = Vector2( 4203, 171 )
+
+[node name="Panadero3" parent="." groups=["NPCs"] instance=ExtResource( 14 )]
+position = Vector2( 4428, 174 )
+
+[node name="Panadero4" parent="." groups=["NPCs"] instance=ExtResource( 14 )]
+position = Vector2( 2161, 173 )
+
+[node name="Panadero5" parent="." groups=["NPCs"] instance=ExtResource( 14 )]
+position = Vector2( 5432, 173 )
+
+[node name="Mujer" parent="." groups=["NPCs"] instance=ExtResource( 21 )]
+position = Vector2( 751, 172 )
+
+[node name="Mujer2" parent="." groups=["NPCs"] instance=ExtResource( 21 )]
+position = Vector2( 4902, 174 )
+
+[node name="Mujer3" parent="." groups=["NPCs"] instance=ExtResource( 21 )]
+position = Vector2( 5798, 176 )
+
+[node name="Mujer4" parent="." groups=["NPCs"] instance=ExtResource( 21 )]
+position = Vector2( 2277, 172 )
+
+[node name="Mujer5" parent="." groups=["NPCs"] instance=ExtResource( 21 )]
+position = Vector2( 3519, 173 )
+
+[node name="Viejo" parent="." groups=["NPCs"] instance=ExtResource( 26 )]
+position = Vector2( 1674, 175 )
+
+[node name="Viejo2" parent="." groups=["NPCs"] instance=ExtResource( 26 )]
+position = Vector2( 3963, 174 )
+
+[node name="Viejo3" parent="." groups=["NPCs"] instance=ExtResource( 26 )]
+position = Vector2( 411, 173 )
+
+[node name="Viejo4" parent="." groups=["NPCs"] instance=ExtResource( 26 )]
+position = Vector2( 1371, 174 )
+
+[node name="Viejo5" parent="." groups=["NPCs"] instance=ExtResource( 26 )]
+position = Vector2( 2972, 177 )
+
+[node name="Sombrero" parent="." groups=["NPCs"] instance=ExtResource( 27 )]
+position = Vector2( 1872, 169 )
+
+[node name="Sombrero2" parent="." groups=["NPCs"] instance=ExtResource( 27 )]
+position = Vector2( 1108, 171 )
+
+[node name="Sombrero3" parent="." groups=["NPCs"] instance=ExtResource( 27 )]
+position = Vector2( 884, 170 )
+
+[node name="Sombrero4" parent="." groups=["NPCs"] instance=ExtResource( 27 )]
+position = Vector2( 2524, 170 )
+
+[node name="Sombrero5" parent="." groups=["NPCs"] instance=ExtResource( 27 )]
+position = Vector2( 2848, 171 )
+
+[node name="GUI" parent="." instance=ExtResource( 22 )]
+
+[node name="PianoMusic" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 0, 7 )
+stream = ExtResource( 23 )
+
+[node name="CitySound" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 1, 2 )
+stream = ExtResource( 24 )
+
+[node name="BadMusic" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 8, 14 )
+stream = ExtResource( 25 )
+
+[node name="Gato" parent="." instance=ExtResource( 4 )]
+position = Vector2( 148, 189 )
+speed = 4000
+
+[node name="Camera2D" type="Camera2D" parent="Gato"]
+current = true
+limit_left = 0
+limit_top = 0
+limit_right = 5960
+limit_bottom = 150
+limit_smoothed = true
+script = ExtResource( 32 )
+
+[node name="FInalFood" type="Sprite" parent="."]
+visible = false
+position = Vector2( 187, 110 )
+scale = Vector2( 0.300537, 0.237061 )
+texture = ExtResource( 30 )
+
+[connection signal="last_breath" from="." to="." method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="Trash3" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="Trash4" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="Small_trash3" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="Small_trash4" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="middle_Trash" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="middle_Trash2" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="middle_Trash3" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="middle_Trash4" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="Panadero" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="Panadero2" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="Panadero3" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="Panadero4" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="Panadero5" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="Mujer" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="Mujer2" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="Mujer3" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="Mujer4" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="Mujer5" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="Viejo" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="Viejo2" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="Viejo3" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="Viejo4" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="Viejo5" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="Sombrero" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="Sombrero2" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="Sombrero3" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="Sombrero4" method="_on_Node2D_last_breath"]
+[connection signal="last_breath" from="." to="Sombrero5" method="_on_Node2D_last_breath"]
+[connection signal="gave_food" from="Trash" to="." method="_on_Trash_gave_food"]
+[connection signal="punched" from="Trash" to="." method="_on_Trash_punched"]
+[connection signal="gave_food" from="Trash3" to="." method="_on_Trash3_gave_food"]
+[connection signal="punched" from="Trash3" to="." method="_on_Trash3_punched"]
+[connection signal="gave_food" from="Trash4" to="." method="_on_Trash4_gave_food"]
+[connection signal="punched" from="Trash4" to="." method="_on_Trash4_punched"]
+[connection signal="gave_food" from="Small_trash" to="." method="_on_Small_trash_gave_food"]
+[connection signal="punched" from="Small_trash" to="." method="_on_Small_trash_punched"]
+[connection signal="gave_food" from="Small_trash3" to="." method="_on_Small_trash3_gave_food"]
+[connection signal="punched" from="Small_trash3" to="." method="_on_Small_trash3_punched"]
+[connection signal="gave_food" from="Small_trash4" to="." method="_on_Small_trash4_gave_food"]
+[connection signal="punched" from="Small_trash4" to="." method="_on_Small_trash4_punched"]
+[connection signal="gave_food" from="middle_Trash" to="." method="_on_middle_Trash_gave_food"]
+[connection signal="punched" from="middle_Trash" to="." method="_on_middle_Trash_punched"]
+[connection signal="gave_food" from="middle_Trash2" to="." method="_on_middle_Trash2_gave_food"]
+[connection signal="punched" from="middle_Trash2" to="." method="_on_middle_Trash2_punched"]
+[connection signal="gave_food" from="middle_Trash3" to="." method="_on_middle_Trash3_gave_food"]
+[connection signal="punched" from="middle_Trash3" to="." method="_on_middle_Trash3_punched"]
+[connection signal="gave_food" from="middle_Trash4" to="." method="_on_middle_Trash4_gave_food"]
+[connection signal="punched" from="middle_Trash4" to="." method="_on_middle_Trash4_punched"]
+[connection signal="gave_food" from="Panadero" to="." method="_on_Panadero_gave_food"]
+[connection signal="punched" from="Panadero" to="." method="_on_Panadero_punched"]
+[connection signal="gave_food" from="Panadero2" to="." method="_on_Panadero2_gave_food"]
+[connection signal="punched" from="Panadero2" to="." method="_on_Panadero2_punched"]
+[connection signal="gave_food" from="Panadero3" to="." method="_on_Panadero3_gave_food"]
+[connection signal="punched" from="Panadero3" to="." method="_on_Panadero3_punched"]
+[connection signal="gave_food" from="Panadero4" to="." method="_on_Panadero4_gave_food"]
+[connection signal="punched" from="Panadero4" to="." method="_on_Panadero4_punched"]
+[connection signal="gave_food" from="Panadero5" to="." method="_on_Panadero5_gave_food"]
+[connection signal="punched" from="Panadero5" to="." method="_on_Panadero5_punched"]
+[connection signal="gave_food" from="Mujer" to="." method="_on_Mujer_gave_food"]
+[connection signal="punched" from="Mujer" to="." method="_on_Mujer_punched"]
+[connection signal="gave_food" from="Mujer2" to="." method="_on_Mujer2_gave_food"]
+[connection signal="punched" from="Mujer2" to="." method="_on_Mujer2_punched"]
+[connection signal="gave_food" from="Mujer3" to="." method="_on_Mujer3_gave_food"]
+[connection signal="punched" from="Mujer3" to="." method="_on_Mujer3_punched"]
+[connection signal="gave_food" from="Mujer4" to="." method="_on_Mujer4_gave_food"]
+[connection signal="punched" from="Mujer4" to="." method="_on_Mujer4_punched"]
+[connection signal="gave_food" from="Mujer5" to="." method="_on_Mujer5_gave_food"]
+[connection signal="punched" from="Mujer5" to="." method="_on_Mujer5_punched"]
+[connection signal="gave_food" from="Viejo" to="." method="_on_Viejo_gave_food"]
+[connection signal="punched" from="Viejo" to="." method="_on_Viejo_punched"]
+[connection signal="gave_food" from="Viejo2" to="." method="_on_Viejo2_gave_food"]
+[connection signal="punched" from="Viejo2" to="." method="_on_Viejo2_punched"]
+[connection signal="gave_food" from="Viejo3" to="." method="_on_Viejo3_gave_food"]
+[connection signal="punched" from="Viejo3" to="." method="_on_Viejo3_punched"]
+[connection signal="gave_food" from="Viejo4" to="." method="_on_Viejo4_gave_food"]
+[connection signal="punched" from="Viejo4" to="." method="_on_Viejo4_punched"]
+[connection signal="gave_food" from="Viejo5" to="." method="_on_Viejo5_gave_food"]
+[connection signal="punched" from="Viejo5" to="." method="_on_Viejo5_punched"]
+[connection signal="gave_food" from="Sombrero" to="." method="_on_Sombrero_gave_food"]
+[connection signal="punched" from="Sombrero" to="." method="_on_Sombrero_punched"]
+[connection signal="gave_food" from="Sombrero2" to="." method="_on_Sombrero2_gave_food"]
+[connection signal="punched" from="Sombrero2" to="." method="_on_Sombrero2_punched"]
+[connection signal="gave_food" from="Sombrero3" to="." method="_on_Sombrero3_gave_food"]
+[connection signal="punched" from="Sombrero3" to="." method="_on_Sombrero3_punched"]
+[connection signal="gave_food" from="Sombrero4" to="." method="_on_Sombrero4_gave_food"]
+[connection signal="punched" from="Sombrero4" to="." method="_on_Sombrero4_punched"]
+[connection signal="gave_food" from="Sombrero5" to="." method="_on_Sombrero5_gave_food"]
+[connection signal="punched" from="Sombrero5" to="." method="_on_Sombrero5_punched"]

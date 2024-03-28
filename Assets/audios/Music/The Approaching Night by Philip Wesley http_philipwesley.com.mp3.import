@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/The Approaching Night by Philip Wesley http_philipwesley.com.mp3-8eb40ac85a2630f41383fa66723b07e8.mp3str"
+
+[deps]
+
+source_file="res://Assets/audios/Music/The Approaching Night by Philip Wesley http_philipwesley.com.mp3"
+dest_files=[ "res://.import/The Approaching Night by Philip Wesley http_philipwesley.com.mp3-8eb40ac85a2630f41383fa66723b07e8.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

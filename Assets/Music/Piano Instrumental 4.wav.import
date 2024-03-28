@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Piano Instrumental 4.wav-0a1cd3b6e604f98401bfa54ede8d3840.sample"
+
+[deps]
+
+source_file="res://Assets/Music/Piano Instrumental 4.wav"
+dest_files=[ "res://.import/Piano Instrumental 4.wav-0a1cd3b6e604f98401bfa54ede8d3840.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

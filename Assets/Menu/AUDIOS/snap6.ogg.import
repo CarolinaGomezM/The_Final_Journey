@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/snap6.ogg-636a8390905d256c4acc0c0741ffb5de.oggstr"
+
+[deps]
+
+source_file="res://Assets/Menu/AUDIOS/snap6.ogg"
+dest_files=[ "res://.import/snap6.ogg-636a8390905d256c4acc0c0741ffb5de.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

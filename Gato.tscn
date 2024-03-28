@@ -1,0 +1,57 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Assets/Personajes/CAT/new_cat.png" type="Texture" id=1]
+[ext_resource path="res://Gato.gd" type="Script" id=2]
+[ext_resource path="res://Assets/light/light (1).png" type="Texture" id=3]
+
+[sub_resource type="AtlasTexture" id=16]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 32, 27 )
+
+[sub_resource type="AtlasTexture" id=17]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 32, 0, 32, 27 )
+
+[sub_resource type="AtlasTexture" id=18]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 64, 0, 32, 27 )
+
+[sub_resource type="AtlasTexture" id=19]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 96, 0, 32, 27 )
+
+[sub_resource type="SpriteFrames" id=15]
+animations = [ {
+"frames": [ SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=21]
+extents = Vector2( 7.5, 6 )
+
+[sub_resource type="AudioStreamSample" id=20]
+
+[node name="Gato" type="KinematicBody2D"]
+collision_mask = 2
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.625, 0.611111 )
+frames = SubResource( 15 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 21 )
+
+[node name="Light2D" type="Light2D" parent="."]
+scale = Vector2( 0.147461, 0.134766 )
+texture = ExtResource( 3 )
+color = Color( 0.356863, 0.313726, 0.313726, 1 )
+
+[node name="paso1" type="AudioStreamPlayer2D" parent="."]
+stream = SubResource( 20 )

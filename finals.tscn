@@ -1,0 +1,127 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://Assets/fonts/04B_03__.TTF" type="DynamicFontData" id=1]
+[ext_resource path="res://finals.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Finals/_23cc68d7-0c7d-41ed-95d8-031def85ab97.jpeg" type="Texture" id=3]
+[ext_resource path="res://Assets/Finals/_21338b06-f8bc-47ef-aead-90c801404618.jpeg" type="Texture" id=4]
+[ext_resource path="res://Assets/fonts/Select Fonts/OGYIGO.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://Assets/GameOver}/Killer pink - En la comisaria_-0001.jpg" type="Texture" id=6]
+[ext_resource path="res://Assets/GameOver}/Killer pink - En la comisaria_-0000.jpg" type="Texture" id=7]
+[ext_resource path="res://Assets/GameOver}/onlymp3.to - Wind Song-1v5-N7XTm-w-192k-1701463484.wav" type="AudioStream" id=8]
+[ext_resource path="res://Assets/Menu/AUDIOS/snap6.wav" type="AudioStream" id=9]
+[ext_resource path="res://Assets/Menu/Buttons/OPC/SimpleKeys/Classic/Dark/Spritesheets/SPACE.png" type="Texture" id=10]
+
+[sub_resource type="DynamicFont" id=1]
+size = 13
+font_data = ExtResource( 1 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 7 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=3]
+size = 38
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 5 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 10 )
+region = Rect2( 0, 0, 67, 16 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 10 )
+region = Rect2( 67, 0, 67, 16 )
+
+[sub_resource type="SpriteFrames" id=7]
+animations = [ {
+"frames": [ SubResource( 5 ), SubResource( 6 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="GameOver" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 382.0
+margin_bottom = 215.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Veneno" type="Sprite" parent="."]
+visible = false
+position = Vector2( 187, 92 )
+scale = Vector2( 0.246826, 0.205566 )
+texture = ExtResource( 3 )
+
+[node name="Hit" type="Sprite" parent="."]
+visible = false
+position = Vector2( 187, 92 )
+scale = Vector2( 0.247, 0.206 )
+texture = ExtResource( 4 )
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+margin_left = 45.0
+margin_top = 174.0
+margin_right = 329.0
+margin_bottom = 215.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 67.0
+margin_top = 187.0
+margin_right = 307.0
+margin_bottom = 203.0
+custom_fonts/font = SubResource( 1 )
+text = "Cause of death: desnutrition"
+align = 1
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+visible = false
+position = Vector2( 193, 70.5 )
+scale = Vector2( 0.804, 0.658 )
+frames = SubResource( 2 )
+playing = true
+
+[node name="Label2" type="Label" parent="."]
+visible = false
+margin_left = 101.0
+margin_top = 15.0
+margin_right = 298.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 3 )
+text = "GAME OVER"
+
+[node name="Button" type="Button" parent="."]
+visible = false
+margin_left = 160.0
+margin_top = 136.0
+margin_right = 243.0
+margin_bottom = 156.0
+focus_mode = 0
+custom_fonts/font = SubResource( 4 )
+text = "Main Menu"
+flat = true
+
+[node name="Song" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 8 )
+
+[node name="audo_button" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
+position = Vector2( 343, 191 )
+scale = Vector2( 0.354478, 0.53125 )
+frames = SubResource( 7 )
+playing = true
+
+[connection signal="mouse_entered" from="Button" to="." method="_on_Button_mouse_entered"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

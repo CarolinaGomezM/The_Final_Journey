@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/snap6.mp3-fd62b02c17f3869afb2e662ea5aaad9e.mp3str"
+
+[deps]
+
+source_file="res://Assets/Menu/AUDIOS/snap6.mp3"
+dest_files=[ "res://.import/snap6.mp3-fd62b02c17f3869afb2e662ea5aaad9e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

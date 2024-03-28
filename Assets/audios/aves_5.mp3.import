@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/aves_5.mp3-086ddb2e0c71bf69dc38a482075e6072.mp3str"
+
+[deps]
+
+source_file="res://Assets/audios/aves_5.mp3"
+dest_files=[ "res://.import/aves_5.mp3-086ddb2e0c71bf69dc38a482075e6072.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
